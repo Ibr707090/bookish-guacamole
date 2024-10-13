@@ -2,7 +2,7 @@ name: Keep Codespaces Running
 
 on:
   schedule:
-    - cron: '* * * * *'  # Runs every minute
+    - cron: '*/5 * * * *'  # Runs every 10 minutes
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -42,4 +42,3 @@ jobs:
 
           # Wait for all background processes to complete
           wait
-          
